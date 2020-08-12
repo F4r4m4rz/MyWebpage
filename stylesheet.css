@@ -1,0 +1,42 @@
+header {
+    background-image: linear-gradient(white, black);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: start;
+}
+
+.main {
+    margin: 0mm;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.desc {
+    margin: 0mm;
+    font-size: small;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 10px 0px 10px;
+    padding: 5px;
+    list-style-type: none;
+    color: white;
+}
+
+.nav-item.active {
+    border: violet;
+    border-bottom: black;
+    border-style: solid;
+}
