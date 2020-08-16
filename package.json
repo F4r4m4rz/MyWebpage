@@ -1,0 +1,14 @@
+{
+    "name": "faramarz_website",
+    "version": "1.0.0",
+    "description": "F4r4m4rz website",
+    "main": "script.js",
+    "scripts": {
+        "start": "lite-server"
+    },
+    "author": "Faramarz Bodaghi",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    }
+}
