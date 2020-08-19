@@ -17,20 +17,15 @@ body {
 }
 
 header {
+    position: relative;
     height: 100vh;
     background-color: #BAB86C;
     color: #00205B;
 }
 
-header.scrolled {
-    height: 10vh;
-    position: fixed;
-    top: 0;
-}
-
 .title {
     background-color: inherit;
-    height: 8vh;
+    height: 6vh;
     position: sticky;
     top: 0;
     margin: 0 0 0 0;
@@ -57,10 +52,12 @@ header.scrolled {
 }
 
 .place-holder-top {
+    background-color: inherit;
     height: 46vh;
 }
 
 .place-holder-btm {
+    background-color: inherit;
     height: 46vh;
 }
 
@@ -117,8 +114,12 @@ nav {
         margin-bottom: 0px;
     }
     .nav-collapse {
-        visibility: hidden;
+        display: none;
         position: absolute;
+        top: 0;
+    }
+    .nav-show {
+        display: block;
         top: 0;
     }
     .nav-list {
@@ -179,16 +180,17 @@ nav {
         height: 45vh;
     }
     .place-holder-btm {
-        height: 41vh;
+        height: 44vh;
     }
     /* Horizontal navigation to be hidden on mobile and tablet */
     nav {
         background-color: inherit;
         position: sticky;
         width: 100vw;
-        top: 8vh;
+        top: 6vh;
         text-transform: uppercase;
-        padding-bottom: 2vh;
+        margin: 0;
+        padding: 10px 0 10px 0;
     }
     .nav-button {
         position: absolute;
@@ -200,6 +202,7 @@ nav {
         padding: 0;
     }
     .nav-item {
+        background-color: inherit;
         text-align: center;
         width: 25%;
         margin: 0;
