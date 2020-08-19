@@ -66,16 +66,27 @@ article {
 }
 
 .topic {
-    display: flex;
-    background-color: white;
-    justify-content: center;
+    background-color: khaki;
+    width: 66.66%;
+    margin: 0 0 0 16.66%;
 }
 
 .back-picture {
+    height: 100px;
+    background-color: lightpink;
     position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .blank {
+    background-color: purple;
     width: 100vm;
     height: 500px;
+}
+
+.welcome-image {
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
 }
