@@ -20,25 +20,14 @@ em {
 
 .bluebox {
     background-color: blue;
-    position: fixed;
-    top: 60px;
-    z-index: 1;
 }
 
 .greenbox {
     background-color: greenyellow;
-    position: relative;
-    margin: 20px;
-    top: 50px;
-    z-index: 3;
-    transform: rotate(10deg);
-}
-
-.container{
-    background: rgba(0,0,0,0.4);
-    height: 200px;
-    width: 200px;
-    position: relative;
-    margin-top: 100px;
-    z-index: ;
+    margin: 0 auto;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
 }
