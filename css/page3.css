@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
 body{
     
     margin: 0;
@@ -61,6 +65,7 @@ h1{
 .name{
     font-size: 55px;
     font-family: Brush Script MT;
+    font-style: italic;
 }
 
 .first-name{
@@ -109,19 +114,48 @@ a{
 }
 
 article{
-    background-color: red;
-    height: 1000px;
+    background-color: #add8e6;
+    z-index: -2;
 }
 
 .article{
-    background-color: #eae9e9;
+    background-color: white;
+    position: relative;
     width: 80%;
-    height: 500px;
     margin: 0 auto;
+    z-index: 2;
 }
 
 .article-title{
-    background-color:aqua;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.article-text{
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    text-align: justify;
+    line-height: 1.6;
+}
+.article-text p{
+    padding: 10px;
+}
+
+img{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: -25vh auto;
+    height: auto;
+}
+
+.background-image{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 0;
 }
 
 @media only screen and (min-width: 768px){
