@@ -13,7 +13,7 @@ p{
 }
 
 .first-page{
-    background-color: #03254c;
+    background-color: #003366;
     height: 100vh;
     width: 100vw;
 }
@@ -114,12 +114,12 @@ a{
 }
 
 article{
-    background-color: #add8e6;
+    background-color: #bfbebe;
     z-index: -2;
 }
 
 .article{
-    background-color: white;
+    background-color: #bfbebe;
     position: relative;
     width: 80%;
     margin: 0 auto;
