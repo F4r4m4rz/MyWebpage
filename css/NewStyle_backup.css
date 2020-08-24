@@ -116,15 +116,20 @@ a{
     text-decoration:none;
 }
 
-.profile{
+article{
+    height: 100vh;
     position: relative;
+    font-family: Verdana;
+}
+
+.profile{
     height: 100vh;
     font-family: Verdana;
     width: 100vw;
     background-color: #FFFCBB;
 }
 
-.profile h2{
+.content h2{
     color: #03254c;
     font-size: 30px;
     padding: 20px;
@@ -132,13 +137,18 @@ a{
     text-align: center;
 }
 
-.profile h3{
+.content h3{
     color: #959392;
     padding: 0;
     margin: 0 0 10px 0;
     text-align: center;
 }
 
+.profile ul{
+    padding: 0;
+    margin: 0 15%;
+    list-style-type: none;
+}
 
 .seperator{
     width: 80%;
@@ -176,6 +186,8 @@ a{
 }
 
 .content .image{
+    position: absolute;
+    left: 40%;
 }
 
 .image img{
@@ -192,12 +204,18 @@ a{
 .content{
     height: 300px;
     width: 100vw;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
 }
 
 .content .content-list{
     padding: 0;
     margin: 0;
+    position: absolute;
     width: 100vw;
+    background-color: aqua;
     list-style: none;
     text-align: center;
 }
@@ -205,29 +223,22 @@ a{
 .content .content-list .content-item{
     margin: 10px auto;
     padding: 10px;
+    background-color:aquamarine;
+    display: inline;
 }
 
 .aboutme{
+    position: absolute;
     text-align: justify;
-    width: 80%;
+    width: 25%;
+    left: 10%;
 }
 
 .detail{
-    margin: 0 auto;
-    text-align: left;
-    width: 80%;
-}
-
-.detail ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.detail li{
-    background-color: aqua;
-    width: 40%;
     position: absolute;
+    text-align: left;
+    width: 25%;
+    left: 70%;
 }
 
 @media only screen and (min-width: 768px){
@@ -248,58 +259,4 @@ a{
         margin: 30px;
         display: inline;
     }
-    
-    .content .image{
-    position: absolute;
-    left: 40%;
-}
-
-.image img{
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 20px;
-    border-color: #959392;
-}
-
-.content{
-    height: 300px;
-    width: 100vw;
-    position: absolute;
-    top: 50%;
-    margin-top: -150px;
-}
-
-.content .content-list{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    width: 100vw;
-    list-style: none;
-    text-align: center;
-}
-
-.content .content-list .content-item{
-    margin: 10px auto;
-    padding: 10px;
-    display: inline;
-}
-
-.aboutme{
-    position: absolute;
-    text-align: justify;
-    width: 25%;
-    left: 10%;
-}
-
-.detail{
-    position: absolute;
-    text-align: left;
-    width: 25%;
-    left: 70%;
-}
-
 }
