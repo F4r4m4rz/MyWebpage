@@ -1,9 +1,10 @@
 html {
+    overflow-x:hidden;
     scroll-behavior: smooth !important;
 }
 
 body{
-    
+    width: 100%;
     margin: 0;
     padding: 0;;
 }
@@ -13,7 +14,9 @@ p{
 }
 
 .first-page{
-    background-color: #003366;
+    margin: 0;
+    padding: 0;
+    background-color: #03254c;
     height: 100vh;
     width: 100vw;
 }
@@ -114,12 +117,13 @@ a{
 }
 
 article{
-    background-color: #bfbebe;
+    width: 100vw;
+    background-color: #add8e6;
     z-index: -2;
 }
 
 .article{
-    background-color: #bfbebe;
+    background-color: white;
     position: relative;
     width: 80%;
     margin: 0 auto;
@@ -144,11 +148,13 @@ article{
 }
 
 img{
-    max-width: 100%;
-    position: absolute;
-    top: 50%;
-    margin: -25vh auto;
-    height: auto;
+    border-style: solid;
+    border-color: red;
+    display: block;
+    padding: 0;
+    height: 100vh;
+    top: 0;
+    margin: 0 auto;
 }
 
 .background-image{
