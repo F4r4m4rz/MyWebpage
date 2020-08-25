@@ -1,216 +1,317 @@
-/* To ensure bording and padding is included in all elements*/
-
-* {
-    box-sizing: border-box;
+html {
+    overflow-x:hidden;
+    scroll-behavior: smooth !important;
 }
 
-[class*="col-"] {
-    float: left;
+body{
     width: 100%;
+    margin: 0;
+    padding: 0;;
 }
-
-html,
-body {
+p{
     margin: 0;
     padding: 0;
-    background-color: #BAB86C;
 }
 
-header {
+.first-page{
+    margin: 0;
+    padding: 0;
+    background-color: #03254c;
+    height: 100vh;
+    width: 100vw;
+}
+
+.welcome{
+    height: 200px;
+    width: 100vw;
+    position: absolute;
+    top: 40%;
+    margin-top: -100px;
+}
+.line{
+    height: 5px;
+    background-color: #959392;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+}
+.fl-left{
+    position: absolute;
+    left:0;
+}
+
+.fl-right{
+    position: absolute;
+    right:0;
+}
+
+.intro{
+    color: #bfbebe;
+    position: absolute;
+    margin-left: 20%;
+    width: 60%;
+    height: inherit;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+.Iam{
+    position: absolute;
+    font-family: Brush Script MT;
+    font-size: 30px;
+    top: 10%;
+    left: 10%;
+}
+
+.name{
+    font-size: 55px;
+    font-family: Brush Script MT;
+    font-style: italic;
+}
+
+.first-name{
+    position: absolute;
+    top: 28%;
+    left: 15%;
+}
+
+.last-name{
+    position: absolute;
+    top: 55%;
+    right: 10%;
+}
+
+.desc{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-family: Brush Script MT;
+    font-size: 20px;
+    bottom: 0;
+}
+
+.nav{
+    position: absolute;
+    width: 100vw;
+    top: 60%;
+    font-family: Copperplate;
+    font-size: 30px;
+}
+.nav-list{
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.nav-item{
+    margin: 10px auto;
+    padding: 10px;
+}
+a{
+    color: #bfbebe;
+    text-decoration:none;
+}
+
+.profile{
     position: relative;
     height: 100vh;
-    background-color: #BAB86C;
-    color: #00205B;
+    font-family: Verdana;
+    width: 100vw;
+    background-color: #FFFCBB;
 }
 
-.title {
-    background-color: inherit;
-    height: 6vh;
-    position: sticky;
-    top: 0;
-    margin: 0 0 0 0;
+.profile h2{
+    color: #03254c;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0;
     text-align: center;
-    flex-direction: column;
-    font-family: sans-serif;
 }
 
-.title h1 {
+.profile h3{
+    color: #959392;
     padding: 0;
-    margin: 0;
-    font-weight: bolder;
-    font-style: italic;
-    text-decoration-line: underline;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #92B6D6;
-}
-
-.title p {
-    padding: 0;
-    margin: 0mm;
-    font-size: small;
-    text-transform: uppercase;
-}
-
-.place-holder-top {
-    background-color: inherit;
-    height: 46vh;
-}
-
-.place-holder-btm {
-    background-color: inherit;
-    height: 46vh;
+    margin: 0 0 10px 0;
+    text-align: center;
 }
 
 
-/* Horizontal navigation to be hidden on mobile and tablet */
-
-nav {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+.seperator{
+    width: 80%;
+    height: 2px;
+    background-color: aqua;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nav-button {
-    background-color: inherit;
-    color: inherit;
-    border-style: hidden;
-    margin-bottom: 10px;
+
+.content .title{
+    font-weight: bold;
+    color: #03254c;
+    font-size: 20px;
+    margin 0;
+    padding-bottom: 10px;
 }
 
-.nav-list {
-    margin: 0;
+.content .title-2{
+    font-weight: bold;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.aboutme .text{
+    font-size: 13px;
+    text-align: justify;
     padding: 0;
 }
 
-.nav-item {
+.content .text-2{
+    font-size: 13px;
+    margin: 10px
+}
+
+.content .image{
+}
+
+.image img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #959392;
+}
+
+.content{
+    height: 300px;
+    width: 100vw;
+}
+
+.content .content-list{
+    padding: 0;
     margin: 0;
-    padding: 0px;
-    list-style-type: none;
+    width: 100vw;
+    list-style: none;
+    text-align: center;
 }
 
-.nav-item a {
-    color: inherit;
-    text-decoration: none;
+.content .content-list .content-item{
+    margin: 10px auto;
+    padding: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    nav {
-        background-color: transparent;
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-    }
-    nav.scrolled {
-        margin: 1.2rem 0 0 2rem;
-    }
-    .nav-button {
-        margin: 0.75rem 0 0 1rem;
-        background-color: inherit;
-        color: inherit;
-        border-style: hidden;
-        margin-bottom: 0px;
-    }
-    .nav-collapse {
-        display: none;
-        position: absolute;
-        top: 0;
-    }
-    .nav-show {
-        display: block;
-        top: 0;
-    }
-    .nav-list {
-        background-color: #BAB86C;
-        margin: 0;
-        padding: 0;
-    }
-    .nav-item {
-        background-color: inherit;
-        margin: 0px 0 0 10px;
-        padding: 10px;
-        list-style-type: none;
-    }
-    .nav-item a {
-        color: inherit;
-        text-decoration: none;
-    }
+.aboutme{
+    text-align: justify;
+    width: 80%;
 }
 
-@media only screen and (min-width: 768px) {
-    .col-1 {
-        width: 8.33%;
+.detail{
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+}
+
+.detail ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.detail li{
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 10%;
+    float: left;
+}
+
+@media only screen and (min-width: 768px){
+.welcome{
+    height: 200px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -375px;
+}
+    
+    .nav{
+        top: 80%;
     }
-    .col-2 {
-        width: 16.66%;
+    .nav-item{
+        margin: 30px;
+        display: inline;
     }
-    .col-3 {
-        width: 25%;
-    }
-    .col-4 {
-        width: 33.33%;
-    }
-    .col-5 {
-        width: 41.66%;
-    }
-    .col-6 {
-        width: 50%;
-    }
-    .col-7 {
-        width: 58.33%;
-    }
-    .col-8 {
-        width: 66.66%;
-    }
-    .col-9 {
-        width: 75%;
-    }
-    .col-10 {
-        width: 83.33%;
-    }
-    .col-11 {
-        width: 91.66%;
-    }
-    .col-12 {
-        width: 100%;
-    }
-    .place-holder-top {
-        height: 45vh;
-    }
-    .place-holder-btm {
-        height: 44vh;
-    }
-    /* Horizontal navigation to be hidden on mobile and tablet */
-    nav {
-        background-color: inherit;
-        position: sticky;
-        width: 100vw;
-        top: 6vh;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 10px 0 10px 0;
-    }
-    .nav-button {
-        position: absolute;
-        visibility: hidden;
-    }
-    .nav-list {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    .nav-item {
-        background-color: inherit;
-        text-align: center;
-        width: 25%;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    .nav-item a {
-        color: inherit;
-        text-decoration: none;
-    }
+    
+    .content .image{
+    position: absolute;
+    left: 50%;
+    
+}
+
+.image img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left:-75px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #959392;
+}
+
+.content{
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+}
+
+.content .content-list{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    list-style: none;
+    text-align: center;
+}
+
+.content .content-list .content-item{
+    margin: 10px auto;
+    padding: 10px;
+    display: inline;
+}
+
+.aboutme{
+    position: absolute;
+    text-align: justify;
+    width: 25%;
+    left: 10%;
+}
+
+.detail{
+    position: absolute;
+    text-align: left;
+    width: 25%;
+    left: 70%;
+}
+    
+    .detail ul{
+    list-style: none;
+}
+
+.detail li{
+    width: auto;
+    margin: 0;
+    position: static;
+    float: none
+}
+
 }
