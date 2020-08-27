@@ -16,7 +16,7 @@ p{
 .first-page{
     margin: 0;
     padding: 0;
-    background-color: rgb(65, 80, 145);
+    background-color: #0f4c81;
     height: 100vh;
     width: 100vw;
 }
@@ -30,7 +30,7 @@ p{
 }
 .line{
     height: 5px;
-    background-color: #bfbebe;
+    background-color: #b5c7d3;
     width: 20%;
     position: absolute;
     top: 50%;
@@ -46,7 +46,7 @@ p{
 }
 
 .intro{
-    color: #bfbebe;
+    color: #b5c7d3;
     position: absolute;
     margin-left: 20%;
     width: 60%;
@@ -70,7 +70,6 @@ h1{
     font-size: 30px;
     font-family: cursive;
     font-style: italic;
-    text-shadow: 1px 1px;
 }
 
 .first-name{
@@ -114,17 +113,18 @@ h1{
     padding: 10px;
 }
 a{
-    color: #bfbebe;
+    color: #b5c7d3;
     text-decoration:none;
 }
 
 .profile{
+    color: rgb(80,80,80);
     font-family:serif;
     background-color: rgb(240,240,240);
 }
 
 .profile h2{
-    color: rgb(65, 80, 145);
+    color: #0f4c81;
     font-size: 40px;
     padding: 40px 0 10px 0;
     margin: 0;
@@ -141,15 +141,15 @@ a{
 
 .seperator{
     height: 2px;
-    background-color: rgb(65, 80, 145);
-    margin-bottom: 0px;
+    background-color: #0f4c81;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .content .title{
     font-weight: bold;
-    color: rgb(65, 80, 145);
+    color: #0f4c81;
     font-size: 30px;
     margin 0;
     padding-bottom: 10px;
@@ -178,10 +178,12 @@ a{
 
 
 .content{
+    margin: 0 auto;
+    padding: 0;
 }
 
 .content .content-list{
-    padding: 50px 0;
+    padding: 0 0 30px 0;
     margin: 0;
     margin: 0 auto;
     list-style: none;
@@ -209,6 +211,57 @@ a{
 .detail li{
     margin: 0;
     padding: 0;
+}
+
+.skills{
+    font-family:serif;
+    background-color: #b5c7d3;
+}
+
+.skills h2{
+    color: #0f4c81;
+    font-size: 40px;
+    padding: 40px 0 10px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.skills h3{
+    color: #0f4c81;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.skills .content{
+    padding: 0 0 30px 0;
+}
+
+.skills .skills-list{
+    color: rgb(80,80,80);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .skill-item{
+    margin: 0px 0 20px 0;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.skill{
+    font-family:sans-serif;
+    font-size: 15px;
+    display: inline;
+}
+.skill-proficiency{
+    display: inline;
+    float: right;
+}
+
+.star{
+    font-size: 12px;
+    color: rgb(65, 80, 145);
 }
 
 @media only screen and (max-width: 600px){
