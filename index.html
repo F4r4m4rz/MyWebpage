@@ -34,17 +34,17 @@
         </div>
         <div class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#aboutme"> Profile</a></li>
-                <li class="nav-item"><a href="#activities">Skills</a></li>
-                <li class="nav-item"><a href="#contactme">Contact</a></li>
+                <li class="nav-item"><a href="#profile"> Profile</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
     
     
     
-    <article class="profile">
-        <h2>Profile</h2>
+    <article id="profile" class="profile">
+        <h2 class="article-title">Profile</h2>
         <h3>I am a passionate developer.</h3>
         <div class="seperator sm-col-8 md-col-8 lg-col-8"></div>
         <div class="content">
@@ -54,10 +54,10 @@
                </div>
                <div class="text">
                    <p>
-                       I am a creative developer and have good knowledge of back-end and front-end development. I believe in possibilities and therefore I think everything is possible. I am solution oriented and try to find out the best possible solution. Everything is solvable in thousands of ways, but my interest is to find the most stable yet fast and economical solution. I love working with new technologies and with large groups. I never stop learning.
+                       I am a creative developer and have good knowledge of back-end and front-end development. I believe in possibilities and therefore I think everything is possible. I am solution oriented and try to find out the best solution. Everything is solvable in thousands of ways, but my interest is to find the most stable yet fast and economical solution. I love working with new technologies and with large groups. I never stop learning.
                    </p>
                </div></li>
-                <li class="content-item image sm-col-10 md-col-10 lg-col-4"><img src="./image/img4.jpeg" alt=""></li>
+                <li class="content-item image sm-col-10 md-col-10 lg-col-4"><img src="./images/img4.jpeg" alt=""></li>
                 <li class="content-item sm-col-10 md-col-10 lg-col-12"><div class="detail">
                     <div class="title sm-col-10 md-col-10 ">
                     Details
@@ -102,8 +102,8 @@
         </div>
     </article>
     
-    <article class="skills">
-       <h2>Skills</h2>
+    <article id="skills" class="skills">
+       <h2 class="article-title">Skills</h2>
        <div class="seperator sm-col-8 md-col-8 lg-col-8"></div>
         <div class="content sm-col-8">
           <h3>Programming</h3>
@@ -170,6 +170,16 @@
                </li>
                <li class="skill-item sm-col-12">
                    <p class="skill">Blazor</p>
+                   <div class="skill-proficiency">
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star-half-alt star"></i>
+                       <i class="far fa-star star"></i>
+                   </div>
+               </li>
+               <li class="skill-item sm-col-12">
+                   <p class="skill">REST API</p>
                    <div class="skill-proficiency">
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
@@ -319,27 +329,67 @@
            <h3>Tools</h3>
            <ul class="skills-list">
                <li class="skill-item sm-col-12">
-                   <p class="skill">English</p>
+                   <p class="skill">Visual studio</p>
                    <div class="skill-proficiency">
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
-                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star-half-alt star"></i>
                    </div>
                </li>
                <li class="skill-item sm-col-12">
-                   <p class="skill">Persian</p>
+                   <p class="skill">Notpad++</p>
                    <div class="skill-proficiency">
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
-                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star-half-alt star"></i>
                    </div>
                </li>
                <li class="skill-item sm-col-12">
-                   <p class="skill">Norwegian</p>
+                   <p class="skill">Microsoft office</p>
+                   <div class="skill-proficiency">
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="far fa-star star"></i>
+                   </div>
+               </li>
+               <li class="skill-item sm-col-12">
+                   <p class="skill">Brackets</p>
+                   <div class="skill-proficiency">
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="far fa-star star"></i>
+                   </div>
+               </li>
+               <li class="skill-item sm-col-12">
+                   <p class="skill">Pycharm</p>
+                   <div class="skill-proficiency">
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star-half-alt star"></i>
+                       <i class="far fa-star star"></i>
+                   </div>
+               </li>
+               <li class="skill-item sm-col-12">
+                   <p class="skill">Jupyher notebook</p>
+                   <div class="skill-proficiency">
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="fas fa-star star"></i>
+                       <i class="far fa-star star"></i>
+                       <i class="far fa-star star"></i>
+                   </div>
+               </li>
+               <li class="skill-item sm-col-12">
+                   <p class="skill">Postman</p>
                    <div class="skill-proficiency">
                        <i class="fas fa-star star"></i>
                        <i class="fas fa-star star"></i>
@@ -350,6 +400,47 @@
                </li>
            </ul>
        </div>
+    </article>
+    
+    <article id="contact" class="contact">
+        <h2 class="article-title">Contact</h2>
+        <div class="seperator sm-col-8 md-col-8 lg-col-8"></div>
+        <div class="content sm-col-8">
+           <ul class="contact-list sm-col-8">
+            <li class="contact-item sm-col-4">
+               <a href="https://github.com/F4r4m4rz">
+                   <i class="fab fa-github contact-icon"></i>
+               </a>
+            </li>
+            <li class="contact-item sm-col-4">
+                <a href="https://stackoverflow.com/users/11323678/f4r4m4rz">
+                    <i class="fab fa-stack-overflow contact-icon"></i>
+                </a>
+            </li>
+            <li class="contact-item sm-col-4">
+            <a href="https://www.linkedin.com/in/faramarz-bodaghi-4a858250/">
+                <i class="fab fa-linkedin contact-icon"></i>
+            </a>
+            </li>
+            <li class="contact-item sm-col-4">
+                <a href="https://www.instagram.com/f4r4m4rz.b/">
+                    <i class="fab fa-instagram contact-icon "></i>
+                </a>
+                   
+            </li>
+            <li class="contact-item sm-col-4">
+                <a href="https://twitter.com/farboda">
+                    <i class="fab fa-twitter contact-icon"></i>
+                </a>
+            </li>
+            <li class="contact-item sm-col-4">
+                <a href="mailto: me@iamfara.com">
+                    <i class="fas fa-at contact-icon"></i>
+                </a>
+            </li>
+           </ul>
+        </div>
+        
     </article>
     
     

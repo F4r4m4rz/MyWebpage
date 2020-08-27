@@ -6,7 +6,7 @@ html {
 body{
     width: 100%;
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 p{
     margin: 0;
@@ -98,7 +98,7 @@ h1{
     position: absolute;
     width: 100vw;
     top: 70%;
-    font-family: Copperplate;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
 }
 .nav-list{
@@ -112,18 +112,20 @@ h1{
     margin: 10px auto;
     padding: 10px;
 }
-a{
+.nav a{
     color: #b5c7d3;
     text-decoration:none;
 }
 
+article{
+    font-family: "Open Sans", sans-serif !important;
+}
 .profile{
     color: rgb(80,80,80);
-    font-family:serif;
     background-color: rgb(240,240,240);
 }
 
-.profile h2{
+.article-title {
     color: #0f4c81;
     font-size: 40px;
     padding: 40px 0 10px 0;
@@ -214,17 +216,10 @@ a{
 }
 
 .skills{
-    font-family:serif;
     background-color: #b5c7d3;
 }
 
-.skills h2{
-    color: #0f4c81;
-    font-size: 40px;
-    padding: 40px 0 10px 0;
-    margin: 0;
-    text-align: center;
-}
+
 
 .skills h3{
     color: #0f4c81;
@@ -250,7 +245,6 @@ a{
 }
 
 .skill{
-    font-family:sans-serif;
     font-size: 15px;
     display: inline;
 }
@@ -262,6 +256,61 @@ a{
 .star{
     font-size: 12px;
     color: rgb(65, 80, 145);
+}
+
+.contact{
+    background-color: rgb(80,80,80);
+}
+
+.contact .article-title{
+    color: rgb(230,230,230);
+}
+
+.contact .seperator{
+    background-color: rgb(120,120,120);
+    height: 1px;
+}
+
+.contact .content{
+    color: rgb(230,230,230);
+    height: 150px;
+}
+
+.contact h4{
+    margin: 0;
+}
+.contact .content .seperator{
+    margin: 0;
+}
+
+.contact-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.contact-item{
+    padding: 0;
+    margin: 0 0 20px 0;
+    float: left;
+}
+
+.contact-icon{
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.contact a{
+    color: rgb(230,230,230);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.email{
+    padding: 0;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px){
