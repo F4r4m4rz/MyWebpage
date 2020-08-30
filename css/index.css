@@ -13,6 +13,16 @@ p{
     padding: 0;
 }
 
+blockquote{
+    font-style: italic;
+    font-size: 17px;
+}
+
+cite{
+    font-style: italic;
+    font-size: 13px;
+}
+
 .first-page{
     margin: 0;
     padding: 0;
@@ -232,6 +242,7 @@ article{
 }
 
 .skills .skills-list{
+    display: block;
     color: rgb(80,80,80);
     margin: 0 auto;
     padding: 0 20px;
