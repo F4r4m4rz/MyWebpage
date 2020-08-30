@@ -234,7 +234,7 @@ article{
 .skills .skills-list{
     color: rgb(80,80,80);
     margin: 0 auto;
-    padding: 0;
+    padding: 0 20px;
     list-style: none;
 }
 
@@ -246,7 +246,7 @@ article{
 
 .skill{
     font-size: 15px;
-    display: inline;
+    display: inline-block;
 }
 .skill-proficiency{
     display: inline;
@@ -259,10 +259,12 @@ article{
 }
 
 .contact{
+    display: inline-block;
     background-color: rgb(80,80,80);
 }
 
 .contact .article-title{
+    
     color: rgb(230,230,230);
 }
 
@@ -430,10 +432,13 @@ article{
     margin: 5px auto;
     padding: 10px;
 }
+    .detail{
+        margin: 0 0 150px 0;
+    }
     .detail li{
     margin: 0;
     padding: 0;
-    display: inline-block;
+    float: left;
 }
     .image img{
     width: 150px;
@@ -546,7 +551,7 @@ article{
 .lg-col-12 {
     width: 100%;
 }
-
+    
     .image{
         padding: 50px;
     }
@@ -556,14 +561,13 @@ article{
     display: inline-block;
 }
     .detail{
-        margin: 50px 0;
+        margin: 50px 0 150px 0;
     }
     .detail li{
-        display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
 }
-    .profile{
-        height: 750px;
-    }
     
     .image img{
     width: 200px;
@@ -576,6 +580,7 @@ article{
     border-radius: 50%;
     border-color: #959392;
 }
+    
     
 }
 
